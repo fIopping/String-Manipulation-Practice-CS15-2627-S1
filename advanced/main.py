@@ -10,17 +10,24 @@ if question == "1":
 elif question == "2":
     print("Format a Title")
 
-while True:
-    elif question == "3":
-            print("Format a List\n")
-            answer3 = input("Enter the string to process in the format - apples,oranges,bananas,grapes...\n")
+elif question == "3":
+    print("Format a List\n")
+    answer3 = input("Enter the string to process in the format - apples,oranges,bananas,grapes...\n")
 
-            if "," in answer3:
-                answer3 = answer3.replace(","," | ")
-                print(answer3.upper())
+    if "," in answer3:
+        answer3 = answer3.replace(","," | ")
+        print(answer3.upper())
 
-            if "," not in answer3:
-                print("Please enter a valid input")
+    if "," not in answer3:
+        print("Please enter a valid input")
 
-            else:
-                break
+    else:
+        break
+
+    while True:
+        guess = input("Guess a hand signal")
+        if guess != "Rock" and guess != "Paper" and guess != "Scissors":
+            print("Type in Rock, Paper, or Scissors")
+
+        else:
+            break
