@@ -7,4 +7,4 @@ for i in range(len(numbers)):
 total = sum(numbers)
 average = total / len(numbers)
 print("total:", total)
-print("average:", average)
+print("average is:", average)
